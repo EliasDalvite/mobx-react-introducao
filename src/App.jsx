@@ -1,13 +1,32 @@
 import './App.css';
-import ListaObj from './mobx/ListaObj'
-import MobxObj from './mobx/MobxObj';
-import Formulario from './componentes/Formulario';
+import Form from "./Form"
+import Lista from "./Lista"
+import NotFound from "./NotFound"
+import { createBrowserRouter, RouterProvider  } from "react-router-dom";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    children: [
+      {
+        index : true,
+        element: <Form />
+      },
+      {
+        path : "avancaRota" ,
+        element : <Lista/>,
+      },
+      {
+        path: "*",
+        element: <NotFound />
+      }
+    ]
+  }
+])
+
+function App() {  
   return (
     <div>
-    <Formulario obj={MobxObj}/>
-    <ListaObj obj={MobxObj} />
+       <RouterProvider router={router} />
     </div>
   );
 }

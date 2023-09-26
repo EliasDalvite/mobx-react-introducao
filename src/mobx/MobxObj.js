@@ -18,6 +18,7 @@ class MobxObj {
             atualizaNome: action,
             atualizaSobrenome: action,
             atualizaEmail: action,
+            limpaUsuarios: action
         })
     }
 
@@ -33,6 +34,11 @@ class MobxObj {
             "email": this.email
         }
         this.usuarios.push(novoUsuario)    
+    }
+
+    limpaUsuarios() {
+        this.id = 0
+        this.usuarios = []
     }
 
     atualizaNome(nome) {
