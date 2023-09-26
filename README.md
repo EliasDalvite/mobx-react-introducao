@@ -35,5 +35,5 @@ Também foi criado o arquivo ListaObj, uma constante que retorna todos os usuár
 
 Também é criado um componente para um formulário, onde o mesmo também utiliza da anotação observer, seguindo o mesmo princípio.
 
-Aproveitei para demonstrar como o objeto se comporta com as rotas vistas anteriormente em aula, onde é confirmado que funciona tudo funciona corretamente.
+Aproveitei para demonstrar como o objeto se comporta com as rotas vistas anteriormente em aula, onde é confirmado que tudo funciona corretamente.
 
