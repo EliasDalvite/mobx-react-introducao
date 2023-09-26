@@ -37,3 +37,15 @@ Também é criado um componente para um formulário, onde o mesmo também utiliz
 
 Aproveitei para demonstrar como o objeto se comporta com as rotas vistas anteriormente em aula, onde é confirmado que tudo funciona corretamente.
 
+Comparações com o REDUX:
+### Aprendizado: 
+MobX é considerado mais simples do que o Redux, onde a maioria dos desenvolvedores JavaScript tendem a ser mais proficientes com orientação a objetos, tornando o processo de aprendizado mais fácil, já que o Redux mistura arquitetura Flux e princípios de functional programming.
+
+### Debugging: 
+O Redux oferece boas ferramentas de desenvolvimento, incluindo time travel (voltar no tempo!!). Enquanto isso o MobX deixa a desejar pois conta com uma maior abstração para funcionar.
+
+### Estrutura dos dados: 
+Redux utiliza objetos básicos do JavaScript para guardar os estados, o que permite que as mudanças sejam monitoradas manualmente. Já o MobX usa de dados observáveis para rastrear as mudanças, assim, muitos preferem o MobX por conta da conveniência do seu uso.
+
+### Mutabilidade: 
+Redux tem seu estado imutável, enquanto os valores dos estados do MobX são mutáveis, sejam eles primitivos ou complexos.
