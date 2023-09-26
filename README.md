@@ -29,3 +29,11 @@ Por fim, para iniciar a aplicação:
 npm start
 ```
 
+O exemplo criado é um formulário com cadastro de usuários, onde primeiramente criamos uma classe para o objeto que queremos armazenar, o qual chamamos de MobxObj.js, onde foram mapeadas as variáveis em relação ao seu objetivo dentro do objeto.
+
+Também foi criado o arquivo ListaObj, uma constante que retorna todos os usuários cadastrados no objeto. É importante destacar o uso da anotação observer, a mesma faz parte da biblioteca mobx-react e é usada para transformar componentes React em componentes observáveis. Isso significa que o componente irá "observar" os observáveis MobX e automaticamente se atualizar quando esses observáveis forem modificadas.
+
+Também é criado um componente para um formulário, onde o mesmo também utiliza da anotação observer, seguindo o mesmo princípio.
+
+Aproveitei para demonstrar como o objeto se comporta com as rotas vistas anteriormente em aula, onde é confirmado que funciona tudo funciona corretamente.
+
